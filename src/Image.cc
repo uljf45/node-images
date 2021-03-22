@@ -78,8 +78,8 @@
 #define THROW_TYPE_ERROR(msg) napi_throw_type_error(env, "50010", msg)
 #define THROW_INVALID_ARGUMENTS_ERROR(msg) THROW_TYPE_ERROR("Invalid arguments" msg)
 
-#define DEFAULT_WIDTH_LIMIT  10240 // default limit 10000x10000
-#define DEFAULT_HEIGHT_LIMIT 10240 // default limit 10000x10000
+#define DEFAULT_WIDTH_LIMIT  20480 // default limit 10000x10000
+#define DEFAULT_HEIGHT_LIMIT 20480 // default limit 10000x10000
 
 #define AdjustAmountOfExternalAllocatedMemory(bc) static_cast<int>( \
         v8::Isolate::GetCurrent()->AdjustAmountOfExternalAllocatedMemory(bc));
